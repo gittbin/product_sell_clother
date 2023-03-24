@@ -1,0 +1,129 @@
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+background-clip: content-box;
+/* transition: all 1s ease-in-out; */
+}
+body{height: 100vh;
+    width: 100%;
+background-image: linear-gradient(45deg,#333399,#f0c);
+background-repeat: no-repeat;
+}
+.done{max-width: 0px;}
+.oner{transition: width 5s;}
+.oner{overflow: hidden;}
+.row{
+    display: flex
+}
+.col{
+   
+    height: 100vh;
+    background-color: rgba(197, 228, 255, 0.538);
+    border-radius: 50px;
+
+}
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h{
+    background-color: rgba(85, 94, 90, 0);
+    /* width: 280%; */
+   width: 100%;
+    height: 10%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   cursor: pointer;
+}
+/* .logo{background-color:#333399} */
+.h+.h{
+    margin-top: 10px;
+ 
+}
+i{
+   font-size:30px;
+
+}
+.element{display:flex ;
+   /* padding: 0px 30px; */
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+   font-family: "Audiowide", sans-serif;
+ 
+} 
+
+.coverelement{ 
+display: flex;
+flex-direction:row;
+    border: 10px;
+    border-color: red;
+gap :30px 0px
+
+}
+
+.item1{display: flex;
+    /* justify-content: center; */
+    align-items: center;
+background-color: rgba(197, 228, 255, 1);
+border-radius: 20px;
+position:absolute;
+max-width:0px;
+z-index: 2;
+overflow: hidden;
+white-space: nowrap;
+transition: max-width 5s;
+
+}
+.h:hover{
+    /* position: relative; */
+    z-index: 2;
+    /* width: 280%; */
+
+}
+.h:hover .item1{
+max-width: 1000px;
+
+}
+/* .h:hover .logo{
+    width: 35.71428571%;
+} */
+
+.item1+.item1{
+    margin-top: 50px;
+}
+h4{
+    padding: 0px 30px;
+}
+.animation{
+animation: o ease 1s;
+}
+.animation_reverse{
+    animation: o-reverse ease 0.1s;}
+@keyframes o{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+}
+@keyframes o-reverse{
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* .twoner{
+   animation: k ease-in-out 3s;
+} */
