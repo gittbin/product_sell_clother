@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./item1.2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <style>
@@ -22,8 +23,7 @@
 
    
 }
-.material-symbols-outlined2{
-}
+
     .circle { display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@
 .lesslong{display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px 50px 0px;
+    margin: 10px 0px 30px 0px;
     cursor: pointer;
 }
 .circle:hover{
@@ -64,6 +64,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
 <div class="grid wide">
       <div class="row">
              <div class="col l-1 c-12 m-12 oner">
+                <div class="fixed" style="position: fixed; height: 100vh">
                     <div class="lesslong" style="height: 4%;">
                         <lord-icon
                         src="https://cdn.lordicon.com/iiueiwdd.json"
@@ -93,7 +94,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             deployed_code
                                             </span>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
+                               <h4>Sign In</h4> 
                             </a>
                             </div>
 
@@ -104,7 +105,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             expand_circle_down
                                             </span>
                                       </div>
-                                  <h4>Log in</h4> 
+                                  <h4>Sign Out</h4> 
                                </a>
                                </div>
 
@@ -116,11 +117,11 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             radio_button_checked
                                             </span>
                                       </div>
-                                  <h4>Log innnnnnnnnnnnnnnnnnnnnnnnnnnnnn</h4> 
+                                  <h4>Log Out<output></output></h4> 
                                </a>
                                </div>
 
-                                <div class="item1" style="margin-top: 150px;">
+                                <!-- <div class="item1" style="margin-top: 150px;">
                          
                                 <a href="" class="element">
                                       <div class="circle">
@@ -130,14 +131,14 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                       </div>
                                   <h4>Log in</h4> 
                                </a>
-                               </div> 
+                               </div>  -->
 
                         </div>
 
                     
                     </div>
 
-                  <div class="h">
+                  <div class="h" style="transition: max-width 5.5s ease;">
                         <div class="logo">
                             <!-- <span class="material-symbols-outlined">
                                 search
@@ -151,14 +152,27 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                         </div>
                             <div class="coverelement">
                                 <div class="item1">
-                             <a href="" class="element">
-                                   <div class="circle">
-                                   <span class="material-symbols-outlined">
+                             <!-- <a href="" class="element"> -->
+                                <div class="element">
+                                     <div class="input">
+                               <input type="text" class="inputsearch">
+                               </div>
+                                   <div class="circle" style="margin-right: 10px;">
+                                   <!-- <span class="material-symbols-outlined">
                                             deployed_code
-                                            </span>
+                                            </span> -->
+                                            <lord-icon
+                                                   src="https://cdn.lordicon.com/msoeawqm.json"
+                                                    trigger="hover"
+                                                   colors="primary:#121331,secondary:#000000"
+                                                     stroke="100"
+                                                       style="width:40px;height:40px">
+                                             </lord-icon>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
-                            </a>
+                               <!-- <h4>Search</h4>  -->
+                              
+                        </div>
+                            <!-- </a> -->
                             </div>
                             </div>
                     </div>
@@ -179,11 +193,20 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                  <div class="item1">
                              <a href="" class="element">
                                    <div class="circle">
-                                   <span class="material-symbols-outlined">
+                                   <!-- <span class="material-symbols-outlined">
                                             deployed_code
-                                            </span>
+                                            </span> -->
+                                            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/rjzlnunf.json"
+    trigger="hover"
+    colors="primary:#121331,secondary:#000000"
+    stroke="100"
+    state="hover-2"
+    style="width:40px;height:40px">
+</lord-icon>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
+                               <h4> Video yêu thích</h4> 
                             </a>
                             </div>
                             </div>
@@ -209,7 +232,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             deployed_code
                                             </span>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
+                               <h4>Home</h4> 
                             </a>
                             </div>
                             </div>
@@ -236,7 +259,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             deployed_code
                                             </span>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
+                               <h4>kênh đã chặn</h4> 
                             </a>
                             </div>
                             </div>
@@ -253,13 +276,11 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                                             deployed_code
                                             </span>
                                    </div>
-                               <h4>Log innnnnnnnnnnn</h4> 
+                               <h4>Kênh đã đăng kí</h4> 
                             </a>
                             </div>
                             </div>
                     </div> 
-
-
                     <div>
 
                     </div>
@@ -269,6 +290,7 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                     <div>
 
                     </div>
+                </div>
             </div>
             <div class="col l-11 c-12 m-12 twoner" >
                          <div class="increaselong test ">
@@ -281,8 +303,393 @@ a:hover .circle{ background-image: linear-gradient(45deg,#ff00cc,#333399);}
                               </lord-icon>
                               </div>
                          </div>
-              
+                        <div class="head">
+                            <a href="https://youtu.be/ksZpu1s1LV0">
+                            <div class="shortfilm">
+                                 <div class="coverimage" style="margin-top: 40px;">
+                                 <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                                 </div>
+                                 <div class="detail">
+                                    <div class="avatar">
+                                         <img class="avatardetail" width="100%"  src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                                    </div>  
+                                    <div class="content">
+                                           <span class="comment">
+                                                 You will never speak english fluence in 3 months
+                                           </span>
+                                           <span class="name">
+                                                    Mark ZuckerBerg</br>
+                                                    198 N lượt xem  - 3 ngày trước
+                                           </span>
+                                    </div>                      
+
+
+                                 </div>
+                                 
+                            </div>
+                            </a>
+                            <a href="">
+                            <div class="shortfilm">
+                                <div class="coverimage" style="margin-top: 40px;">
+                                <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                                </div>
+                                <div class="detail">
+                                   <div class="avatar">
+                                        <img class="avatardetail" width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                                   </div>  
+                                   <div class="content">
+                                          <span class="comment">
+                                                You will never speak english fluence in 3 months
+                                          </span>
+                                          <span class="name">
+                                                   Mark ZuckerBerg</br>
+                                                   198 N lượt xem  - 3 ngày trước
+                                          </span>
+                                   </div>                      
+
+
+                                </div>
+                                
+                           </div>
+                           </a>
+                           <a href="">
+                           <div class="shortfilm">
+                            <div class="coverimage" style="margin-top: 40px;">
+                            <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                            </div>
+                            <div class="detail">
+                               <div class="avatar">
+                                    <img class="avatardetail" width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                               </div>  
+                               <div class="content">
+                                      <span class="comment">
+                                            You will never speak english fluence in 3 months
+                                      </span>
+                                      <span class="name">
+                                               Mark ZuckerBerg</br>
+                                               198 N lượt xem  - 3 ngày trước
+                                      </span>
+                               </div>                      
+
+
+                            </div>
+                            
+                       </div>
+                           </a>
+                           <a href="">
+                            <div class="shortfilm">
+                        <div class="coverimage" style="margin-top: 40px;">
+                        <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                        </div>
+                        <div class="detail">
+                           <div class="avatar">
+                                <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                           </div>  
+                           <div class="content">
+                                  <span class="comment">
+                                        You will never speak english fluence in 3 months
+                                  </span>
+                                  <span class="name">
+                                           Mark ZuckerBerg</br>
+                                           198 N lượt xem  - 3 ngày trước
+                                  </span>
+                           </div>                      
+
+
+                        </div>
+                        
+                            </div>
+                           </a>
+                           <a href="">
+                             <div class="shortfilm">
+                    <div class="coverimage" style="margin-top: 40px;">
+                    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                    </div>
+                    <div class="detail">
+                       <div class="avatar">
+                            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                       </div>  
+                       <div class="content">
+                              <span class="comment">
+                                    You will never speak english fluence in 3 months
+                              </span>
+                              <span class="name">
+                                       Mark ZuckerBerg</br>
+                                       198 N lượt xem  - 3 ngày trước
+                              </span>
+                       </div>                      
+
+
+                    </div>
+                    
+                             </div>
+                           </a>
+                           <a href="">
+                              <div class="shortfilm">
+                <div class="coverimage" style="margin-top: 40px;">
+                <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+                </div>
+                <div class="detail">
+                   <div class="avatar">
+                        <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+                   </div>  
+                   <div class="content">
+                          <span class="comment">
+                                You will never speak english fluence in 3 months
+                          </span>
+                          <span class="name">
+                                   Mark ZuckerBerg</br>
+                                   198 N lượt xem  - 3 ngày trước
+                          </span>
+                   </div>                      
+
+
+                </div>
+                
+                              </div>
+                           </a>
+                           <a href="">
+                              <div class="shortfilm">
+            <div class="coverimage" style="margin-top: 40px;">
+            <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+            </div>
+            <div class="detail">
+               <div class="avatar">
+                    <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+               </div>  
+               <div class="content">
+                      <span class="comment">
+                            You will never speak english fluence in 3 months
+                      </span>
+                      <span class="name">
+                               Mark ZuckerBerg</br>
+                               198 N lượt xem  - 3 ngày trước
+                      </span>
+               </div>                      
+
+
+            </div>
+            
+                             </div>
+                          </a>
+                          <a href="">
+                             <div class="shortfilm">
+        <div class="coverimage" style="margin-top: 40px;">
+        <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
         </div>
+        <div class="detail">
+           <div class="avatar">
+                <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+           </div>  
+           <div class="content">
+                  <span class="comment">
+                        You will never speak english fluence in 3 months
+                  </span>
+                  <span class="name">
+                           Mark ZuckerBerg</br>
+                           198 N lượt xem  - 3 ngày trước
+                  </span>
+           </div>                      
+
+
+        </div>
+        
+                                  </div>
+                        </a>
+                          <a href="">
+                           <div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+                          </div>
+                          </a>
+                       <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                       </a>
+                       <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                        </a>
+                       <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                        </a>
+                       <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                        </a>
+                        <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                        </a>
+                        <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                         </a>
+                        <a href="">
+<div class="shortfilm">
+    <div class="coverimage" style="margin-top: 40px;">
+    <img class="image" alt="" style="background-color: transparent;" class="" src="https://i.ytimg.com/vi/ksZpu1s1LV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFTyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBT-KSQepVUPA1QpEIwsDGf6PqGcA">
+    </div>
+    <div class="detail">
+       <div class="avatar">
+            <img width="100%" src="http://hdqwalls.com/wallpapers/satsuriku-no-tenshi-angels-of-death-anime-4k-ah.jpg" alt="">
+       </div>  
+       <div class="content">
+              <span class="comment">
+                    You will never speak english fluence in 3 months
+              </span>
+              <span class="name">
+                       Mark ZuckerBerg</br>
+                       198 N lượt xem  - 3 ngày trước
+              </span>
+       </div>                      
+
+
+    </div>
+    
+</div>
+                         </a>
+
+                         </div>
 
       </div>
 </div>
