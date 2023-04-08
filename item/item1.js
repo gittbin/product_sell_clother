@@ -7,6 +7,8 @@ var twoner=$('.twoner')
 var h=$$('.h')
 var circle2=$('.circle2')
 var row=$('.row')
+var head=$('.head')
+
 lesslong.onclick=function(){
     oner.classList.add('animation')
     twoner.style.transition='all 0.1s ease'
@@ -100,4 +102,39 @@ element.onmouseleave=function(){
 url='http://localhost:3000/course'
 fetch(url)
 .then(element=>element.json())
-.then(element=>console.log(element))
+.then(getVideo)
+function getVideo(value){
+refer=value.map(function(element){
+  return `
+  <a class="a" href="${element.link}">
+  <div class="shortfilm">
+      <div class="coverimage">
+      <img class="image" alt="" style="background-color: transparent;" class="" src="${element.image}">
+      </div>
+      <div class="detail">
+         <div class="avatar">
+              <img class="avatardetail" width="100%" src="${element.logo}" alt="">
+         </div>  
+         <div class="content">
+                <span class="comment">
+                      ${element.comment}
+                </span>
+                <span class="name">
+                         <span class="namee">${element.name}</span>
+                         ${element.view} lượt xem  - ${element.time} ngày trước
+                </span>
+         </div>                      
+
+
+      </div>
+      
+ </div>
+ </a>
+  `
+
+})
+head.innerHTML =refer.join('')
+
+}
+
+
