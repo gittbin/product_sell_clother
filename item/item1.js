@@ -8,7 +8,8 @@ var h=$$('.h')
 var circle2=$('.circle2')
 var row=$('.row')
 var head=$('.head')
-
+var element_of_menu=$('.element_of_menu')
+var element_of_mobile=$$('.element_of_mobile')
 lesslong.onclick=function(){
     oner.classList.add('animation')
     twoner.style.transition='all 0.1s ease'
@@ -100,9 +101,9 @@ element.onmouseleave=function(){
 });
 ////////////////////////////////////////////////////
 url='http://localhost:3000/course'
-fetch(url)
-.then(element=>element.json())
-.then(getVideo)
+// fetch(url)
+// .then(element=>element.json())
+// .then(getVideo)
 function getVideo(value){
 refer=value.map(function(element){
   return `
@@ -136,5 +137,13 @@ refer=value.map(function(element){
 head.innerHTML =refer.join('')
 
 }
-
+element_of_menu.onclick = function(){
+  element_of_mobile.forEach((element)=>{
+    if(!element.classList.contains("appear")){
+      element.classList.add('appear')
+    }else{
+      element.classList.remove('appear')
+    }
+  })
+}
 
