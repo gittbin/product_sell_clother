@@ -50,15 +50,17 @@ function getNumbers(value){
     return  number++
 
 }
-// h.forEach(element => {
-//     element.onclick=function(){
-//         get_item=element.querySelectorAll('.item1')
-//         console.log(get_item)
-//         get_item.forEach(element => {
-//             element.style.maxWidth='1000px'
-//         });
-//     }
-// });
+h.forEach(element => {
+    element.onclick=function(){
+        get_item=element.querySelectorAll('.item1')
+        console.log(get_item)
+        get_item.forEach(element => {
+           if(element.style.maxWidth=='1000px'){element.style.maxWidth='0px'}
+           else{element.style.maxWidth='1000px'} 
+        });
+    }
+});
+
 // h.forEach(element => {
 //     element.onmouseleave=function(){  
 //         get_item=element.querySelectorAll('.item1')

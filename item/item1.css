@@ -98,10 +98,11 @@ transition: max-width 3.5s ease-in-out;
 /* .item1_create_width{
     
 } */
-.h:hover .item1{
+/* .h:hover .item1{
 max-width: 1000px;
 
-}
+} */
+
 .maxwidth{
     max-width: 1000px;
 }
@@ -283,7 +284,7 @@ display: block;
 
 
 
-@media(max-width:1023px){
+@media(max-width:1023.5px){
     .col{border-radius: 0px;}
     .menu{
         display: flex;
