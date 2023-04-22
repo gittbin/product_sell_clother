@@ -54,8 +54,10 @@ h.forEach(element => {
     element.onclick=function(){
         get_item=element.querySelectorAll('.item1')
         get_item.forEach(element => {
-           if(element.style.maxWidth=='1000px'){element.style.maxWidth='0px'}
-           else{element.style.maxWidth='1000px'} 
+           if(element.style.maxWidth=='1000px'){element.style.maxWidth='0px' 
+           twoner.style.opacity=1                }
+           else{element.style.maxWidth='1000px'
+           twoner.style.opacity=0.2} 
         });
     }
 });
@@ -64,6 +66,7 @@ h.forEach(element => {
       get_item=element.querySelectorAll('.item1')
       get_item.forEach(element => {
        element.style.maxWidth='0px'
+       twoner.style.opacity=1
       });
   }
 });
