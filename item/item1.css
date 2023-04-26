@@ -291,6 +291,7 @@ input {
     left: calc(80px + 35px * var(--i));
 }
 .form_mobile {
+    overflow: hidden;
     height: 100%;
     width: 0%;
     display: flex;
@@ -306,6 +307,7 @@ input {
     font-family: 'Roboto', sans-serif;
     font-size: 120%;
     padding-left: 20px;
+    padding-right: 90px;
     background-clip: border-box;
     border-radius: 20px;
     border: 4px solid rgb(133, 206, 22);
@@ -317,7 +319,7 @@ input {
     align-items: center;
     justify-content: center;
 }
-.button_mobile {
+.button_mobile {display: none;
     height: 50%;
     width: 80px;
     padding: 0px 5px;

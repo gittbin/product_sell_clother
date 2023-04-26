@@ -181,16 +181,18 @@ search_mobile.onclick = function (e) {
         menu_mobile.style.display = 'flex';
     }, 500);
     setTimeout(() => {
-        form_mobile.style.width = '70%';
+        form_mobile.style.width = '100%';
         returnn.style.width = '120px';
         option_mobile.style.display = 'block';
         menu.style.background = 'rgb(206, 223, 143)';
+        button_mobile.style.display='block';
     }, 1050);
     setTimeout(() => {
         option_mobile.style.background = 'rgb(206, 223, 143)';
     }, 1200);
 };
 returnn.onclick = function () {
+    button_mobile.style.display='none';
     form_mobile.style.width = '0%';
     option_mobile.style.background = 'rgb(0, 0, 0)';
     returnn.style.width = '0px';
