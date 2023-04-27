@@ -331,6 +331,7 @@ input {
     background-color: rgb(133, 206, 22);
     cursor: pointer;
     border: 3px rgb(133, 206, 22) solid;
+    color: black;
 }
 .button_mobile:hover {
     background-color: rgb(0, 0, 0);
