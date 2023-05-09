@@ -42,7 +42,7 @@ body {
     background-color: rgba(85, 94, 90, 0);
     /* width: 280%; */
     width: 100%;
-    height: 13%;
+    height: 96.925px;
     border-radius: 50px;
     text-align: center;
     display: flex;
@@ -77,13 +77,14 @@ i {
 }
 
 .item1 {
+
     display: flex;
     /* justify-content: center; */
     align-items: center;
     /* background-color: rgba(197, 228, 255, 1); */
     background-color: black;
     border-radius: 20px;
-    position: absolute;
+    position: fixed;
     max-width: 0px;
     z-index: 3;
     overflow: hidden;
@@ -229,7 +230,9 @@ h4 {
 .a:hover {
     opacity: 1;
 }
-
+.twoner{
+    height: 10000px;
+}
 input {
     outline: none;
 }
@@ -287,7 +290,7 @@ input {
     justify-content: center;
 }
 .appear {
-    top: calc(135% - 40px * var(--i));
+    top: calc(135% - 40px * var(--a));
     left: calc(80px + 35px * var(--i));
 }
 .form_mobile {
@@ -310,7 +313,8 @@ input {
     padding-right: 90px;
     background-clip: border-box;
     border-radius: 20px;
-    border: 4px solid rgb(133, 206, 22);
+    border: 4px solid rgb(0, 0, 0);
+    margin-left: 40px;
 }
 .menu_mobile {
     height: 100%;
@@ -328,14 +332,10 @@ input {
     border-radius: 20px;
     font-family: 'Audiowide', sans-serif;
     font-size: 100%;
-    background-color: rgb(133, 206, 22);
+    background-color: rgb(250, 250, 250);
     cursor: pointer;
-    border: 3px rgb(133, 206, 22) solid;
-    color: black;
-}
-.button_mobile:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    border: 3px rgb(0, 0, 0) solid;
+    color: rgb(0, 0, 0);
 }
 .option_mobile {
     position: fixed;
@@ -346,7 +346,7 @@ input {
     border-top: 5px solid white;
 }
 .returnn {
-    background-color: rgb(133, 206, 22);
+    background-color: rgb(255, 255, 255);
     height: 50px;
     width: 0px;
     overflow: hidden;
@@ -355,7 +355,47 @@ input {
     align-items: center;
     justify-content: center;
     transition: width 0.5s linear;
+    margin-right: 30px;
+    color: #000000;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(204, 255, 0);
+ }
+ ::-webkit-scrollbar-track{
+    background-color: rgba(78, 145, 203, 0.632);
+ }
+ ::-webkit-scrollbar-thumb{
+ background-color: rgb(67, 64, 64);
+    border-radius: 30px;
+ }
+
+.fixed{
+overflow-x: hidden;
+    overflow-y: auto;
+    height:calc(100vh - 27px) ;
+    margin-top: 27px;
+}
+.hiddenscroll::-webkit-scrollbar{
+    width: 0px;
+    
+}
+.scroll::-webkit-scrollbar{
+    width: 10px;
+    background-color: #d4e38f00;
+}
+.scroll::-webkit-scrollbar-track{
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.scroll::-webkit-scrollbar:hover{
+    width: 10px;
+    
+}
+.scroll::-webkit-scrollbar-thumb{
+background-color: rgb(100, 106, 106);
+border-radius: 20px;} 
+
 
 @media (max-width: 1023.5px) {
     .col {

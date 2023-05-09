@@ -1,6 +1,7 @@
 $ = document.querySelector.bind(document);
 $$ = document.querySelectorAll.bind(document);
 var parent = $('.grid');
+var item1=$$('.item1');
 var option_mobile = $('.option_mobile');
 var body = $('body');
 var lesslong = $('.lesslong');
@@ -37,6 +38,8 @@ circle2.onclick = function () {
     setTimeout(() => {
         oner.style.display = 'block';
         row.classList.remove('add');
+        fixed.style.width=`${oner.clientWidth-24}px`
+        fixed.style.transform=``
     }, 100);
 };
 function getParent(value, classparent) {
@@ -59,15 +62,18 @@ function getNumbers(value) {
     return number++;
 }
 h.forEach((element) => {
-    element.onclick = function () {
+
+    element.onclick = function () {  
+        
         get_item = element.querySelectorAll('.item1');
         get_item.forEach((element) => {
+
             if (element.style.maxWidth == '1000px') {
                 element.style.maxWidth = '0px';
-                twoner.style.opacity = 1;
+               
             } else {
                 element.style.maxWidth = '1000px';
-                twoner.style.opacity = 0.2;
+               
             }
         });
     };
@@ -77,7 +83,7 @@ h.forEach((element) => {
         get_item = element.querySelectorAll('.item1');
         get_item.forEach((element) => {
             element.style.maxWidth = '0px';
-            twoner.style.opacity = 1;
+            
         });
     };
 });
@@ -114,14 +120,6 @@ padding = getNumbers(padding);
 sum = width - 2 * padding;
 fixed.style.width = sum + 'px';
 
-h.forEach((element) => {
-    element.onmouseover = function () {
-        twoner.style.opacity = 0.2;
-    };
-    element.onmouseleave = function () {
-        twoner.style.opacity = 1;
-    };
-});
 ////////////////////////////////////////////////////
 url = 'http://localhost:3000/course';
 // fetch(url)
@@ -184,17 +182,14 @@ search_mobile.onclick = function (e) {
         form_mobile.style.width = '100%';
         returnn.style.width = '120px';
         option_mobile.style.display = 'block';
-        menu.style.background = 'rgb(206, 223, 143)';
+    
         button_mobile.style.display='block';
     }, 1050);
-    setTimeout(() => {
-        option_mobile.style.background = 'rgb(206, 223, 143)';
-    }, 1200);
 };
 returnn.onclick = function () {
     button_mobile.style.display='none';
     form_mobile.style.width = '0%';
-    option_mobile.style.background = 'rgb(0, 0, 0)';
+
     returnn.style.width = '0px';
     option_mobile.style.display = 'none';
     menu_mobile.style.display = 'none';
@@ -210,3 +205,21 @@ returnn.onclick = function () {
 };
 console.log({ body });
 console.log(width);
+fixed.onmouseleave=function(e) {
+    fixed.classList.remove('scroll')
+    fixed.classList.add('hiddenscroll')
+    fixed.style.width=`${oner.clientWidth-24}px`
+    fixed.style.transform=``
+}
+fixed.onmouseover=function(e) {
+    fixed.classList.add('scroll')
+    fixed.classList.remove('hiddenscroll')
+    fixed.style.width=`${oner.clientWidth-14}px`
+
+}
+fixed.onscroll=function() {
+    o=fixed.scrollTop
+   item1.forEach((element)=>{
+    element.style.transform=`translateY(${-o}px)`
+   })
+}
